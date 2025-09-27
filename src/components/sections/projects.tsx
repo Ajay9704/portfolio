@@ -28,7 +28,7 @@ const projects: Project[] = [
     title: "Enterprise API Gateway Platform",
     description: "Production-ready API Gateway with authentication, analytics, rate-limiting and RBAC. Optimized throughput using Redis caching and WebSocket, reducing request latency by 35%.",
     longDescription: "Built a comprehensive API Gateway solution supporting OAuth2, API keys, rate-limiting, routing and analytics to centralize service access. Implemented containerized deployments and automated delivery using Docker and Kubernetes with CI/CD pipelines.",
-    tech: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "Docker", "Kubernetes"],
+    tech: ["Node.js", "TypeScript", "PostgreSQL", "Redis", "WebSocket", "Docker", "Prometheus"],
     github: "https://github.com/Ajay9704/api_gate_way",
     demo: null,
     featured: true,
@@ -38,18 +38,18 @@ const projects: Project[] = [
       language: "JavaScript"
     },
     highlights: [
-      "35% latency reduction",
-      "10K+ customer scalability",
-      "Real-time monitoring"
+      "35% latency reduction with Redis caching",
+      "Billing system for 10K+ customers",
+      "Real-time metrics across 20+ endpoints"
     ]
   },
   {
     id: 2,
-    title: "ML-Powered Recommendation Engine",
-    description: "Intelligent recommendation system using collaborative filtering and content-based algorithms. Achieved 78% accuracy with real-time personalization for 50K+ users.",
-    longDescription: "Developed a sophisticated recommendation engine combining multiple ML algorithms including collaborative filtering, content-based filtering, and matrix factorization. Implemented real-time data processing pipelines and A/B testing framework.",
-    tech: ["Python", "TensorFlow", "Apache Spark", "MongoDB", "FastAPI", "Docker"],
-    github: "https://github.com/Ajay9704/ml-recommendation-engine",
+    title: "Traffic Flow Predictor",
+    description: "ML-powered traffic prediction system for urban planning. Processed 1M+ traffic records and reduced simulated delays by 35% in test scenarios.",
+    longDescription: "Developed a machine learning system to forecast traffic congestion trends using historical data. Processed over 1 million traffic records to produce deterministic dataset snapshots and collaborated with urban planners for site selection optimization.",
+    tech: ["Python", "scikit-learn", "Pandas", "NumPy", "XGBoost"],
+    github: "https://github.com/Ajay9704/traffic-flow-prediction",
     demo: null,
     featured: true,
     stats: {
@@ -58,49 +58,29 @@ const projects: Project[] = [
       language: "Python"
     },
     highlights: [
-      "78% accuracy rate",
-      "50K+ user scalability",
-      "Real-time processing"
+      "1M+ traffic records processed",
+      "35% delay reduction in simulations",
+      "Informed 10+ site selections"
     ]
   },
   {
     id: 3,
-    title: "Cloud Infrastructure Automation",
-    description: "Terraform-based infrastructure as code solution for AWS deployments. Automated provisioning of scalable, secure cloud environments with monitoring and backup strategies.",
-    longDescription: "Created comprehensive IaC templates for multi-environment AWS deployments including VPC, ECS, RDS, and monitoring stack. Implemented automated backup strategies and disaster recovery procedures.",
-    tech: ["Terraform", "AWS", "Python", "CloudWatch", "Lambda", "S3"],
-    github: "https://github.com/Ajay9704/aws-terraform-infrastructure",
+    title: "Email Spam Detector",
+    description: "ML classifier with 100% precision and 94.1% accuracy on 5K+ labeled emails using advanced ensemble methods.",
+    longDescription: "Built a high-performance email spam classification system using multiple machine learning algorithms including Naive Bayes, XGBoost, and Random Forest. Achieved exceptional accuracy through careful feature engineering and model ensemble techniques.",
+    tech: ["Python", "Naive Bayes", "XGBoost", "Random Forest", "scikit-learn"],
+    github: "https://github.com/Ajay9704/spam_classification",
     demo: null,
     featured: false,
     stats: {
       stars: 15,
       forks: 5,
-      language: "HCL"
+      language: "Python"
     },
     highlights: [
-      "Multi-environment support",
-      "Automated backups",
-      "Cost optimization"
-    ]
-  },
-  {
-    id: 4,
-    title: "Real-time Analytics Dashboard",
-    description: "Interactive dashboard for real-time data visualization and analytics. Built with React, D3.js, and WebSocket connections for live data streaming.",
-    longDescription: "Developed a comprehensive analytics platform with real-time data visualization, custom chart components, and interactive filtering. Integrated with multiple data sources and implemented caching strategies for optimal performance.",
-    tech: ["React", "TypeScript", "D3.js", "WebSocket", "Node.js", "PostgreSQL"],
-    github: "https://github.com/Ajay9704/analytics-dashboard",
-    demo: "https://analytics-demo.vercel.app",
-    featured: false,
-    stats: {
-      stars: 22,
-      forks: 7,
-      language: "TypeScript"
-    },
-    highlights: [
-      "Real-time updates",
-      "Interactive visualizations",
-      "Multi-source integration"
+      "100% precision achieved",
+      "94.1% overall accuracy",
+      "5K+ emails processed"
     ]
   }
 ]

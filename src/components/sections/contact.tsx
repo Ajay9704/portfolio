@@ -313,8 +313,9 @@ export function Contact() {
                     <Linkedin className="h-6 w-6" />
                   </a>
                   <a
-                    href="/resume.pdf"
-                    download
+                    href="https://drive.google.com/file/d/19mNvS9eY5jgD4co0dmbURaumLFJiGsUk/view?usp=drive_link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-center w-12 h-12 bg-primary-600 text-white rounded-xl hover:bg-primary-700 transition-all transform hover:scale-110"
                     aria-label="Download Resume"
                   >

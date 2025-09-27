@@ -77,7 +77,7 @@ export function About() {
                 <div className="mt-8">
                   <Button
                     className="bg-gradient-to-r from-primary-600 to-primary-500 hover:from-primary-700 hover:to-primary-600 text-white"
-                    onClick={() => window.open('/resume.pdf', '_blank')}
+                    onClick={() => window.open('https://drive.google.com/file/d/19mNvS9eY5jgD4co0dmbURaumLFJiGsUk/view?usp=drive_link', '_blank')}
                   >
                     <Download className="mr-2 h-4 w-4" />
                     Download Resume
